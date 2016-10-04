@@ -16,7 +16,7 @@
         width: 1238px;
         height: 759px;
         margin: 55px auto 0 auto ;
-        background: url(images/pic_index.jpg) no-repeat}
+        /*background: url(images/pic_index.jpg) no-repeat*/}
 </style>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,7 +28,13 @@
 
 
 <body>
-    <a href="content.html"><div id="wrap"></div></a>
+    <div id="wrap"><img src="images/pic_index.jpg" alt="*" width="1238" height="759" usemap="#Map">
+      <map name="Map">
+        <area shape="rect" coords="33,622,121,666" href="playfilm-index.html">
+        <area shape="rect" coords="155,623,249,667" href="photo.html">
+        <area shape="rect" coords="278,622,404,671" href="content.html">
+      </map>
+    </div>
 
 <!--Created by
   
