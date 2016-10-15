@@ -52,7 +52,7 @@ image{border:0}
 #wrap{
 	display:block;
 	width:100%;
-	min-width:1440px}
+	min-width:1350px}
 #box_index{
 	display:block;
     position: absolute;
@@ -78,8 +78,7 @@ image{border:0}
     border-radius: 0 15px 0 0}
 #box_content-left{
     display: block;
-    float: left
-}
+    float: left}
 footer{
 	clear:both;
 	display:block;
@@ -100,76 +99,94 @@ footer{
 /*主要內容區塊 */
 h1 a,
 h2,
+.subtitle-01,
+.subtitle-02,
 .slogan,
 #btn_play a,
-#box_boy,
-#box_girl,
-#box_white{   
+#element_triangle,
+#element_circle,
+#element_rectangle{   
     display:block;
 	position:absolute}
 h1 a,
 h2,
+.subtitle-01,
+.subtitle-02,
 .slogan,
 #btn_play a{
     text-indent:100%;
     white-space: normal;
     overflow: hidden;
-font-size: 0}
+    font-size: 0}
 h1 a{
-	top: 46px;
-	right: 19px;
-	width: 211px;
-	height: 83px;
-	background: url(../images/pic_h1.png) no-repeat}
+	top: 25px;
+	right: 27px;
+	width: 223px;
+	height: 50px;
+	background: url(../images/pic_logo.png) no-repeat}
 h2{
     top: 51px;
-	left: 220px;
-	width: 592px;
-	height: 162px;
-	background: url(../images/bg_title.png) no-repeat}
+	left: 27px;
+	width: 172px;
+	height: 459px;
+	background: url(../images/pic_title.png) no-repeat}
+.subtitle-01{
+    top: 222px;
+	left: 213px;
+	width: 151px;
+	height: 137px;
+	background: url(../images/pic_subtitle.png) no-repeat}
+.subtitle-02{
+    top: 411px;
+	left: 213px;
+	width: 181px;
+	height: 83px;
+	background: url(../images/pic_film-note.png) no-repeat}
 .slogan{
-    top: 233px;
-	right: 352px;
-	width: 299px;
-	height: 58px;
-	background: url(../images/bg_slogan.png) no-repeat}
+    top: 201px;
+	right: 205px;
+    z-index: 150;
+	width: 118px;
+	height: 106px;
+	background: url(../images/pic_slogan.png) no-repeat}
 #btn_play a{
-    top: 321px;
-	right: 352px;
-	width: 147px;
-	height: 36px;
-	background: url(../images/btn_play.png) no-repeat}
+    top: 290px;
+	right: 101px;
+    z-index: 150;
+	width: 80px;
+	height: 18px;
+	background: url(../images/btn_play-01.png) no-repeat}
 #btn_play a:hover{
-    background: url(../images/btn_play.png) 0 -36px no-repeat}
-#box_boy{
-    top: 0;
-	left: 22px;
-	width: 144px;
-	height: 372px;
-	background: url(../images/pic_boy.jpg) no-repeat}
-#box_girl{
-    bottom: 0;
-	right: 36px;
+    background: url(../images/btn_play-01.png) 0 -18px no-repeat}
+#element_triangle{
+    bottom: 100px;
+	right: 680px;
     z-index: 99;
-	width: 188px;
-	height: 373px;
-	background: url(../images/pic_girl.jpg) no-repeat}
-#box_white{
-    top: 0;
-	right: 130px;
-	width: 127px;
-	height: 481px;
-    background: rgba(256, 256, 256, .2)}
+	width: 131px;
+	height: 87px;
+	background: url(../images/pic_triangle.png) no-repeat}
+#element_circle{
+    top: 201px;
+	right: 16px;
+    z-index: 99;
+	width: 288px;
+	height: 288px;
+	background: url(../images/pic_circle.png) no-repeat}
+#element_rectangle{
+    bottom: 51px;
+	right: 190px;
+	width: 536px;
+	height: 565px;
+	background: url(../images/pic_rectangle.png) no-repeat}
 
 
 /*首頁選單 */		
 #box_menu{
 	display:block;
 	position:absolute;
-	bottom:39px;
-	left:50%;
-	width: 510px;
-    margin-left: -250px}
+	bottom: 80px;
+	left: 45px;
+	width: 510px}
 #box_menu ul{ 
     display:block; 
     margin:0; 
@@ -178,27 +195,31 @@ h2{
     display: inline-block; 
     list-style: none;
     background: url(../images/bg_line-white.png) right no-repeat}
-#box_menu li:nth-child(3){
-    background: none}
+#box_menu li:nth-child(4){
+    margin-left:38px}
 #box_menu a{
     display: block;
-	height:39px;
+	height:40px;
 	text-indent:100%;
     white-space: normal;
     overflow: hidden;
     font-size: 0;
 	background:url(../images/btn_nav.png) no-repeat;
-	margin:0 15px}
-#box_menu a:nth-child(1){
-    margin-right:20px}
-#box_menu a.nav_01{ width: 130px; background-position: 0 0}
-#box_menu a.nav_01:hover{ background-position: 0 -39px}
-#box_menu a.nav_02{ width: 115px; background-position: 0 -78px}
-#box_menu a.nav_02:hover{ background-position: 0 -117px}
-#box_menu a.nav_03{ width: 115px; background-position: 0 -156px}
-#box_menu a.nav_03:hover{ background-position: 0 -195px}
-#box_menu a.nav_04{ width: 115px; background-position: 0 -234px}
-#box_menu a.nav_04:hover{ background-position: 0 -273px}
+	margin:0}
+#box_menu a.nav_01{ width: 114px; background-position: 0 0}
+#box_menu a.nav_01:hover{ background-position: 0 -40px}
+#box_menu a.nav_02{ width: 112px; background-position: 0 -80px}
+#box_menu a.nav_02:hover{ background-position: 0 -120px}
+#box_menu a.nav_03{ width: 148px; background-position: 0 -160px}
+#box_menu a.nav_03:hover{ background-position: 0 -200px}
+#box_menu a.nav_04{ width: 111px; background-position: 0 -240px}
+#box_menu a.nav_04:hover{ background-position: 0 -280px}
+#box_menu a.nav_05{ width: 147px; background-position: 0 -320px}
+#box_menu a.nav_05:hover{ background-position: 0 -360px}
+#box_menu a.nav_06{ width: 112px; background-position: 0 -400px}
+#box_menu a.nav_06:hover{ background-position: 0 -440px}
+#box_menu a.nav_07{ width: 111px; background-position: 0 -480px}
+#box_menu a.nav_07:hover{ background-position: 0 -520px}
 
 /* 版權列 */					
 footer p{
@@ -211,7 +232,7 @@ footer p{
 footer .txt_mark{
 	display:block;
 	position:absolute;
-	top:14px;
+	top:11px;
 	right:48px;
 	width:52px;
 	height:24px;
