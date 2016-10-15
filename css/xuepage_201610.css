@@ -3,7 +3,7 @@
 * @project    xuedesign studio
 * @Author     Elmo Wu <hello@xuedesign.tw>
 * @copyright  2016 xuedesign studio
-* @version    v1.0 - 201607
+* @version    v1.0 - 201610
 *
 *=====================================
 *   1 通用
@@ -13,9 +13,12 @@
 *       3-2. 內容區塊
 *       3-3. 版權列
 *   4.區域編排
-*       4-1. 藍眼淚介紹
+*       4-1. 劇情簡介
 *       4-2. 劇照花絮
-*       4-3. 相關連結
+*       4-3. 使用指引大綱
+*       4-4. 法律責任
+*       4-5. 給家長的叮嚀
+*       4-6. 諮詢聯絡
 *=====================================
 **/
 
@@ -29,10 +32,10 @@ html { font-size:62.5%}
 body{
 	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
 	font-size: 1rem;
-	line-height:22px;
-	color:#513030;
-	background:url(../images/bg_site.jpg);
-    background-size: cover}
+	line-height: 22px;
+	color: #080404;
+	background: url(../images/bg_site.jpg);
+    /*background-size: cover*/}
 /*a:link {text-decoration:underline; color:#00adee}
 a:visited {text-decoration:underline; color:#8c8c8c}
 a:hover {text-decoration:none; color:#F50}*/
@@ -42,11 +45,11 @@ image{border:0}
 .clean{ clear:both}
 .hidden{ display:none}
 ::selection {
-   background:#243975;
-   color:#fffcdb}
+   background: #d06363;
+   color: #fffcdb}
 ::-moz-selection {
-   background:#243975;
-   color:#fffcdb}
+   background: #d06363;
+   color: #fffcdb}
 
 /*
 =====================================
@@ -55,24 +58,24 @@ image{border:0}
 */
 #wrap{
 	display:block;
-	width:1239px;
-	min-width:1280px;
-	margin:0 auto}
+	width:100%;
+	min-width:1367px}
 #box_container{
 	display:block;
-	width:1239px;
-	margin: 55px auto 0 auto;
-    background:url(../images/bg_index.png) no-repeat #04040A;
-	/*-webkit-box-shadow: 0 0 35px #0c49f7;
-    -moz-box-shadow: 0 0 35px #0c49f7;
-    box-shadow: 0 0 35px #0c49f7;*/
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width:1238px;
+    min-height: 759px;
+    margin: -380px 0 0 -620px;
+    background:url(../images/bg_content.png) no-repeat #f1e8c9;
 	-webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px}
 #box_subcontent{
 	display:block;
 	position:relative;
-	width:1239px}
+	width:1238px}
 #box_aside{
 	display:block;
 	position:relative;
@@ -88,12 +91,11 @@ image{border:0}
 #box_pageinfo{
 	display: block;
 	width: 913px;
-    min-height: 611px;
+    min-height: 620px;
 	margin:103px auto 0 auto;
-	background: rgba(256, 256, 256, .6);
-	-webkit-border-radius: 15px 15px 0 0;
-    -moz-border-radius: 15px 15px 0 0;
-    border-radius: 15px 15px 0 0}
+	background: rgba(256, 256, 256, .5);
+    border-left: 3px solid #ee7d7d;
+    border-right: 3px solid #ee7d7d}
 footer{
 	clear:both;
 	display:block;
@@ -113,7 +115,6 @@ footer{
 */
 h1 a,
 h2,
-.slogan,
 #btn_play a{
     display:block;
 	position:absolute;
@@ -124,86 +125,88 @@ h2,
 
 /* 側邊欄 */
 h2{
-    top: 19px;
-	left: 26px;
-	width: 266px;
-	height: 73px;
-	background:url(../images/bg_sub-title.png) no-repeat}
-.slogan {
-    top: 119px;
-	left:26px;
-	width: 248px;
-	height: 48px;
-	background:url(../images/bg_sub-slogan.png) no-repeat}
-#btn_play a{
-    top: 187px;
-	left: 57px;
-	width: 147px;
-	height: 36px;
-	background: url(../images/btn_play.png) no-repeat}
-#btn_play a:hover{
-    background: url(../images/btn_play.png) 0 -36px no-repeat}
-
+    top: 51px;
+	left: 27px;
+	width: 237px;
+	height: 254px;
+	background:url(../images/pic_title-contentpage.png) no-repeat}
 #box_menu{
-	display:block;
-	position:absolute;
-	top:276px;
-	left:57px}
+	display: block;
+	position: absolute;
+	top: 357px;
+	left: 114px}
 #box_menu ul{ 
-    display:block; 
-    margin:0; 
-    padding:0}
+    display: block; 
+    margin: 0; 
+    padding: 0}
 #box_menu li{ 
     display: block; 
-    list-style: none}
+    list-style: none;
+    margin-bottom: 10px}
 #box_menu a{
     display: block;
-	height:39px;
-	text-indent: 100%;
+	height:40px;
+	text-indent:100%;
     white-space: normal;
     overflow: hidden;
     font-size: 0;
 	background:url(../images/btn_nav.png) no-repeat;
-	margin:0 0 15px}
-#box_menu a.nav_01{ width: 130px; background-position: 0 0}
-#box_menu a.nav_01:hover{ background-position: 0 -39px}
-#box_menu a.nav_02{ width: 115px; background-position: 0 -78px}
-#box_menu a.nav_02:hover{ background-position: 0 -117px}
-#box_menu a.nav_03{ width: 115px; background-position: 0 -156px}
-#box_menu a.nav_03:hover{ background-position: 0 -195px}
-#box_menu a.nav_04{ width: 115px; background-position: 0 -234px}
-#box_menu a.nav_04:hover{ background-position: 0 -273px}
+	margin:0}
+#box_menu a.nav_01{ width: 114px; background-position: 0 0}
+#box_menu a.nav_01:hover{ background-position: 0 -40px}
+#box_menu a.nav_02{ width: 112px; background-position: 0 -80px}
+#box_menu a.nav_02:hover{ background-position: 0 -120px}
+#box_menu a.nav_03{ width: 148px; background-position: 0 -160px}
+#box_menu a.nav_03:hover{ background-position: 0 -200px}
+#box_menu a.nav_04{ width: 111px; background-position: 0 -240px}
+#box_menu a.nav_04:hover{ background-position: 0 -280px}
+#box_menu a.nav_05{ width: 147px; background-position: 0 -320px}
+#box_menu a.nav_05:hover{ background-position: 0 -360px}
+#box_menu a.nav_06{ width: 112px; background-position: 0 -400px}
+#box_menu a.nav_06:hover{ background-position: 0 -440px}
+#box_menu a.nav_07{ width: 111px; background-position: 0 -480px}
+#box_menu a.nav_07:hover{ background-position: 0 -520px}
 
 /*主要內容區*/
 h1 a{
-	top:21px;
-	right:26px;
-	width:187px;
-	height:74px;
-	background:url(../images/pic_subh1.png) no-repeat}
+	top:32px;
+	right:51px;
+	width:223px;
+	height:50px;
+	background:url(../images/pic_logo.png) no-repeat}
 #bar_title{
 	display:block;
     position: relative;
 	width:100%;
-	height:51px;
-	padding: 12px 0 0 68px;
-    background: url(../images/bg_title-bar.png) no-repeat;
-    -webkit-border-radius: 15px 15px 0 0;
-    -moz-border-radius: 15px 15px 0 0;
-    border-radius: 15px 15px 0 0}	
+	height:54px;
+	padding: 9px 0 0 65px;
+    background: url(../images/bg_title-bar.png) no-repeat}	
 #bar_title h3{
 	display:block;
 	background: url(../images/bg_pagetitle.png) no-repeat;
-	width:164px;
-	height:23px;
+	width:157px;
+	height:29px;
 	margin:0;
     text-indent: 100%;
     white-space: normal;
     overflow: hidden;
     font-size: 0}
 #bar_title .ptitle_01{ background-position:0 0}
-#bar_title .ptitle_02{ background-position:0 -23px}
-#bar_title .ptitle_03{ background-position:0 -46px}
+#bar_title .ptitle_02{ background-position:0 -29px}
+#bar_title .ptitle_03{ background-position:0 -58px}
+#bar_title .ptitle_04{ background-position:0 -87px}
+#bar_title .ptitle_05{ background-position:0 -116px}
+#bar_title .ptitle_06{ background-position:0 -145px}
+
+#btn_play a{
+    top: 16px;
+	right: 31px;
+	width: 97px;
+	height: 22px;
+	background: url(../images/btn_play-02.png) no-repeat}
+#btn_play a:hover{
+    background: url(../images/btn_play-02.png) 0 -22px no-repeat}
+
 #box_main{
     display: block;
     width: 845px;
@@ -223,14 +226,14 @@ h1 a{
 footer p{
 	text-align:center;
 	font-size:1.3rem;
-	color:#98b4f9;
+	color:#fff;
 	margin:0;
 	padding:0;
 	line-height:46px}
 footer .txt_mark{
 	display:block;
 	position:absolute;
-	top:14px;
+	top:11px;
 	right:48px;
 	width:52px;
 	height:24px;
