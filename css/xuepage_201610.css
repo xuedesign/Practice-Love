@@ -62,12 +62,13 @@ image{border:0}
 	min-width:1367px}
 #box_container{
 	display:block;
-	position: absolute;
+	/*position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;*/
     width:1238px;
     min-height: 759px;
-    margin: -380px 0 0 -620px;
+    margin: 55px auto;
+    /*margin: -380px 0 0 -620px;*/
     background:url(../images/bg_content.png) no-repeat #f1e8c9;
 	-webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -86,14 +87,14 @@ image{border:0}
 	display:block;
 	position:relative;
 	float:right;
-	width:944px;
+	width:943px;
     min-height: 714px}
 #box_pageinfo{
 	display: block;
-	width: 913px;
+	width: 870px;/*913px*/
     min-height: 620px;
 	margin:103px auto 0 auto;
-	background: rgba(256, 256, 256, .5);
+	background: rgba(256, 256, 256, .6);
     border-left: 3px solid #ee7d7d;
     border-right: 3px solid #ee7d7d}
 footer{
@@ -247,7 +248,7 @@ footer .txt_mark{
 區域編排
 =====================================
 */
-/*藍眼淚介紹*/
+/*劇情簡介*/
 #myvideo{
     display: block;
     width: 700px;
@@ -261,14 +262,14 @@ footer .txt_mark{
 #photo_list li{
 	display:block;
 	float:left;
-	width:100px;
-	height:100px;
+	width:108px;
+	height:108px;
 	margin:0 30px 25px;
 	list-style:none}
 #photo_list img{
     border: 2px solid #e1e1e1}
 
-/*相關連結*/
+/*使用指引大綱*/
 #mylink a{
     display: block;
     width: 840px;
@@ -286,6 +287,12 @@ footer .txt_mark{
     padding-top: 10px;
     text-align: center;
     color: #4b4b4b}
+
+/*法律責任*/
+
+/*給家長的叮嚀*/
+
+/*諮詢聯絡*/
 
 /*動畫效果*/	
 .animated {
