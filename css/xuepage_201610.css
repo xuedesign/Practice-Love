@@ -248,11 +248,59 @@ footer .txt_mark{
 區域編排
 =====================================
 */
+
 /*劇情簡介*/
+.my-content h4{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: rgb(238,125,125)}
+.my-content h5{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: rgb(156,100,100)}
+.my-content p{
+    font-size: 1.5rem;
+    line-height: 2.2rem}
+.my-content li{
+    font-size: 1.5rem;
+    line-height: 2.2rem}
+
+#box_story{
+    display: block;
+    width: 800px;
+    margin: 0 auto}
+#box_story ul{ margin: 0; padding: 0}
+#box_story li{
+    margin: 45px 0}
+.actor-photo{
+    display: block;
+    float: left}
+.actor-photo-2{
+    display: block;
+    float: right}
+.actor-info{
+    display: block;
+    float: right;
+    width: 80%;
+    padding-left: 30px}
+.actor-info-2{
+    display: block;
+    float: left;
+    width: 68%;
+    padding-right: 40px}
+.actor-info-3{
+    display: block;
+    float: left;
+    width: 68%;
+    padding: 30px 0 0 40px}
+.sec-title{
+    margin-top: 30px}
+.pp_actor{ padding-top: 25px}
+
 #myvideo{
     display: block;
     width: 700px;
-    margin: 0 auto}
+    margin: 20px auto}
 
 /*劇照花絮*/
 #photo_list{
@@ -290,7 +338,25 @@ footer .txt_mark{
 
 /*法律責任*/
 
+
 /*給家長的叮嚀*/
+#box_note{
+    display: block;
+    width: 800px;
+    margin: 0 auto}
+.note_photo{
+    display: block;
+    float: left;
+    width: 160px}
+.note_info{
+    display: block;
+    float: right;
+    width: 610px;
+    padding-top: 30px}
+.note_info h5{
+    padding-bottom: 8px}
+.note_info p{
+    padding-bottom: 20px}
 
 /*諮詢聯絡*/
 
