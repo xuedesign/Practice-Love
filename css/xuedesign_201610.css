@@ -55,14 +55,14 @@ image{border:0}
 	min-width:1367px}
 #box_index{
 	display:block;
-    position: absolute;
+    /*position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;*/
 	width: 1239px;
     min-height: 759px;
 	background:url(../images/bg_index.png) no-repeat;
-    margin: -380px 0 0 -620px;
-	/*margin: 55px auto 0 auto ;*/
+    /*margin: -380px 0 0 -620px;*/
+	margin: 55px auto 0 auto ;
 	-webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px}
@@ -78,7 +78,8 @@ image{border:0}
     border-radius: 0 15px 0 0}
 #box_content-left{
     display: block;
-    float: left}
+    float: left;
+    position:relative}
 footer{
 	clear:both;
 	display:block;
@@ -184,9 +185,9 @@ h2{
 #box_menu{
 	display:block;
 	position:absolute;
-	bottom: 80px;
+	top: 590px;
 	left: 45px;
-	width: 510px}
+    width: 510px}
 #box_menu ul{ 
     display:block; 
     margin:0; 

@@ -256,46 +256,45 @@ footer .txt_mark{
     color: rgb(238,125,125)}
 .my-content h5{
     font-size: 1.8rem;
-    line-height: 2.5rem;
+    line-height: 3.1rem;
     color: rgb(156,100,100)}
-.my-content p{
-    font-size: 1.5rem;
-    line-height: 2.2rem}
+.my-content p,
 .my-content li{
     font-size: 1.5rem;
-    line-height: 2.2rem}
+    line-height: 2.2rem;
+    text-align: justify}
 
-#box_story{
+#box_story,
+#box_law,
+#box_note{
     display: block;
-    width: 800px;
+    width: 750px;
     margin: 0 auto}
 #box_story ul{ margin: 0; padding: 0}
 #box_story li{
     margin: 45px 0}
 .actor-photo{
     display: block;
-    float: left}
+    float: left;
+    width: 22%}
 .actor-photo-2{
     display: block;
     float: right}
 .actor-info{
     display: block;
     float: right;
-    width: 80%;
+    width: 75%;
     padding-left: 30px}
 .actor-info-2{
     display: block;
     float: left;
-    width: 68%;
+    width: 64%;
     padding-right: 40px}
-.actor-info-3{
-    display: block;
-    float: left;
-    width: 68%;
-    padding: 30px 0 0 40px}
 .sec-title{
     margin-top: 30px}
 .pp_actor{ padding-top: 25px}
+.pp_actor-02{ padding-top: 20px}
+.pp_actor-03{ padding-top: 10px}
 
 #myvideo{
     display: block;
@@ -337,13 +336,23 @@ footer .txt_mark{
     color: #4b4b4b}
 
 /*法律責任*/
-
+.parents{
+    margin-bottom: 15px}
+#box_law p{
+    padding-left: 25px}
+#box_law ul{
+    padding-left: 84px}
+#box_law li{
+    list-style: circle outside;
+    border-bottom: 1px dashed #acacac;
+    padding: 8px 0}
+#box_law h4{
+    padding-bottom: 10px}
+#box_law h5{
+    padding-left: 25px;
+    margin-top: 15px}
 
 /*給家長的叮嚀*/
-#box_note{
-    display: block;
-    width: 800px;
-    margin: 0 auto}
 .note_photo{
     display: block;
     float: left;
@@ -351,7 +360,7 @@ footer .txt_mark{
 .note_info{
     display: block;
     float: right;
-    width: 610px;
+    width: 550px;
     padding-top: 30px}
 .note_info h5{
     padding-bottom: 8px}
