@@ -115,7 +115,7 @@ footer{
 =====================================
 */
 h1 a,
-h2,
+h2 a,
 #btn_play a{
     display:block;
 	position:absolute;
@@ -125,7 +125,7 @@ h2,
     font-size: 0}
 
 /* 側邊欄 */
-h2{
+h2 a{
     top: 51px;
 	left: 27px;
 	width: 237px;
@@ -266,7 +266,8 @@ footer .txt_mark{
 
 #box_story,
 #box_law,
-#box_note{
+#box_note,
+#box_link{
     display: block;
     width: 750px;
     margin: 0 auto}
@@ -368,6 +369,28 @@ footer .txt_mark{
     padding-bottom: 20px}
 
 /*諮詢聯絡*/
+#box_link h5{
+    margin: 10px 0;
+    padding: 0 15px;
+    background-color: rgba(156,100,100,.7);
+    color: #fff;
+    letter-spacing: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px}
+#box_link li{
+    border-bottom: 1px dashed #F2ACAC;
+    padding: 20px 0}
+#box_link li li{ 
+    border-bottom: none;
+    padding: 0 0 0 25px}
+#box_link span{
+    font-size: 1.5rem;
+    color: rgb(156,100,100);
+    margin-left: 10px}
+.ppbo{margin-bottom: 15px}
+.wshot{ width: 70px}
+.wlong{ width: 145px}
 
 /*動畫效果*/	
 .animated {
@@ -382,11 +405,40 @@ footer .txt_mark{
   -webkit-animation-duration: 2s;
           animation-duration: 2s}
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes fadeIn {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 30%, 0);
-    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: 500ms;
+	animation-delay: 500ms;
+    -webkit-animation-duration: 2000ms;
+    -moz-animation-duration: 2000ms;
+	animation-duration: 2000ms}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0);
   }
 
   to {
@@ -396,66 +448,11 @@ footer .txt_mark{
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 30%, 0);
-    transform: translate3d(0, 30%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-	animation-duration: 2s;    
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-@-webkit-keyframes breathe {
- 0% {
-   -webkit-box-shadow: 0 0 35px #0c49f7;
-    -moz-box-shadow: 0 0 35px #0c49f7;
-    box-shadow: 0 0 35px #0c49f7;}
-
-  50% {
-    -webkit-box-shadow: 0 0 95px #0c49f7;
-    -moz-box-shadow: 0 0 95px #0c49f7;
-    box-shadow: 0 0 95px #0c49f7;}
- 100% {
-   -webkit-box-shadow: 0 0 35px #0c49f7;
-    -moz-box-shadow: 0 0 35px #0c49f7;
-    box-shadow: 0 0 35px #0c49f7;}}
-
-@keyframes breathe {
- 0% {
-   -webkit-box-shadow: 0 0 35px #0c49f7;
-    -moz-box-shadow: 0 0 35px #0c49f7;
-    box-shadow: 0 0 35px #0c49f7;}
-
-  50% {
-    -webkit-box-shadow: 0 0 95px #0c49f7;
-    -moz-box-shadow: 0 0 95px #0c49f7;
-    box-shadow: 0 0 95px #0c49f7;}
- 100% {
-   -webkit-box-shadow: 0 0 35px #0c49f7;
-    -moz-box-shadow: 0 0 35px #0c49f7;
-    box-shadow: 0 0 35px #0c49f7;}}
-
-.mybreathe{
-   -webkit-animation-duration: 3500ms;
-    -moz-animation-duration: 3500ms;
-	animation-duration: 3500ms;	  
-   -webkit-animation-name: breathe;
-   animation-name: breathe;
-   -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite    
-}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: 450ms;
+  animation-delay: 450ms;
+  -webkit-animation-duration: 2500ms;
+  -moz-animation-duration: 2500ms;
+  animation-duration: 2500ms}
