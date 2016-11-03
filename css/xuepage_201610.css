@@ -116,7 +116,8 @@ footer{
 */
 h1 a,
 h2 a,
-#btn_play a{
+#btn_play a,
+#btn_download a{
     display:block;
 	position:absolute;
     text-indent: 100%;
@@ -207,6 +208,14 @@ h1 a{
 	background: url(../images/btn_play-02.png) no-repeat}
 #btn_play a:hover{
     background: url(../images/btn_play-02.png) 0 -22px no-repeat}
+#btn_download a{
+    top: 16px;
+	right: 143px;
+	width: 134px;
+	height: 22px;
+	background: url(../images/btn_download.png) no-repeat}
+#btn_download a:hover{
+    background: url(../images/btn_download.png) 0 -22px no-repeat}
 
 #box_main{
     display: block;
@@ -221,6 +230,8 @@ h1 a{
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #2f2f2f}
+#box_main li{
+    text-align: justify}
 
 
 /* 版權列 */
@@ -352,6 +363,28 @@ footer .txt_mark{
 #box_law h5{
     padding-left: 25px;
     margin-top: 15px}
+
+#law-note{ margin-bottom: 20px}
+#law-note h5{
+    display: block;
+    width: 95%;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    background: rgba(238,125,125,1);
+    margin-left: 50px}
+#law-note p{
+    display: block;
+    width: 95%;
+    margin: -5px 0 0 50px;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(119, 71, 71);
+    text-shadow: 1px 1px 3px #fff;
+    border: 2px solid rgba(238,125,125,.8);
+    background: rgba(241,232,201,.8)}
 
 /*給家長的叮嚀*/
 .note_photo{
