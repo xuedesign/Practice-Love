@@ -1,0 +1,526 @@
+/**
+*
+* @project    xuedesign studio
+* @Author     Elmo Wu <hello@xuedesign.tw>
+* @copyright  2016 xuedesign studio
+* @version    v1.0 - 201610
+*
+*=====================================
+*   1.通用
+*   2.網站架構 
+*   3.內頁架構
+*       3-1. 側邊攔
+*       3-2. 內容區塊
+*       3-3. 版權列
+*   4.區域編排
+*       4-1. 劇情簡介
+*       4-2. 劇照花絮
+*       4-3. 使用指引大綱
+*       4-4. 法律責任
+*       4-5. 給家長的叮嚀
+*       4-6. 諮詢聯絡
+*   5.測試站標籤
+*=====================================
+**/
+
+
+/*
+=====================================
+通用設定
+=====================================
+*/
+html { font-size:62.5%}
+body{
+	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	line-height: 22px;
+	color: #080404;
+	background: url(../images/bg_site.jpg);
+    /*background-size: cover*/}
+/*a:link {text-decoration:underline; color:#00adee}
+a:visited {text-decoration:underline; color:#8c8c8c}
+a:hover {text-decoration:none; color:#F50}*/
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
+::selection {
+   background: #d06363;
+   color: #fffcdb}
+::-moz-selection {
+   background: #d06363;
+   color: #fffcdb}
+
+/*
+=====================================
+網站架構
+=====================================
+*/
+#wrap{
+	display:block;
+	width:100%;
+	min-width:1367px}
+#box_container{
+	display:block;
+	/*position: absolute;
+    top: 50%;
+    left: 50%;*/
+    width:1238px;
+    min-height: 759px;
+    margin: 55px auto;
+    /*margin: -380px 0 0 -620px;*/
+    background:url(../images/bg_content.png) no-repeat #f1e8c9;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px}
+#box_subcontent{
+	display:block;
+	position:relative;
+	width:1238px}
+#box_aside{
+	display:block;
+	position:relative;
+	float:left;
+	z-index:99;
+	width:295px}
+#box_pagemain{
+	display:block;
+	position:relative;
+	float:right;
+	width:943px;
+    min-height: 714px}
+#box_pageinfo{
+	display: block;
+	width: 870px;/*913px*/
+    min-height: 620px;
+	margin:103px auto 0 auto;
+	background: rgba(256, 256, 256, .6);
+    border-left: 3px solid #ee7d7d;
+    border-right: 3px solid #ee7d7d}
+footer{
+	clear:both;
+	display:block;
+	position:relative;
+	width:1238px;
+	height:46px;
+	background: url(../images/bg_footer.png) repeat-x;
+	-webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px}
+
+
+/*
+=====================================
+內頁架構
+=====================================
+*/
+h1 a,
+h2 a,
+#btn_play a,
+#btn_download a{
+    display:block;
+	position:absolute;
+    text-indent: 100%;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 0}
+
+/* 側邊欄 */
+h2 a{
+    top: 51px;
+	left: 27px;
+	width: 237px;
+	height: 254px;
+	background:url(../images/pic_title-contentpage.png) no-repeat}
+#box_menu{
+	display: block;
+	position: absolute;
+	top: 357px;
+	left: 114px}
+#box_menu ul{ 
+    display: block; 
+    margin: 0; 
+    padding: 0}
+#box_menu li{ 
+    display: block; 
+    list-style: none;
+    margin-bottom: 10px}
+#box_menu a{
+    display: block;
+	height:40px;
+	text-indent:100%;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 0;
+	background:url(../images/btn_nav.png) no-repeat;
+	margin:0}
+#box_menu a.nav_01{ width: 114px; background-position: 0 0}
+#box_menu a.nav_01:hover{ background-position: 0 -40px}
+#box_menu a.nav_02{ width: 112px; background-position: 0 -80px}
+#box_menu a.nav_02:hover{ background-position: 0 -120px}
+#box_menu a.nav_03{ width: 148px; background-position: 0 -160px}
+#box_menu a.nav_03:hover{ background-position: 0 -200px}
+#box_menu a.nav_04{ width: 111px; background-position: 0 -240px}
+#box_menu a.nav_04:hover{ background-position: 0 -280px}
+#box_menu a.nav_05{ width: 147px; background-position: 0 -320px}
+#box_menu a.nav_05:hover{ background-position: 0 -360px}
+#box_menu a.nav_06{ width: 112px; background-position: 0 -400px}
+#box_menu a.nav_06:hover{ background-position: 0 -440px}
+#box_menu a.nav_07{ width: 111px; background-position: 0 -480px}
+#box_menu a.nav_07:hover{ background-position: 0 -520px}
+
+/*主要內容區*/
+h1 a{
+	top:32px;
+	right:51px;
+	width:223px;
+	height:50px;
+	background:url(../images/pic_logo.png) no-repeat}
+#bar_title{
+	display:block;
+    position: relative;
+	width:100%;
+	height:54px;
+	padding: 9px 0 0 65px;
+    background: url(../images/bg_title-bar.png) no-repeat}	
+#bar_title h3{
+	display:block;
+	background: url(../images/bg_pagetitle.png) no-repeat;
+	width:157px;
+	height:29px;
+	margin:0;
+    text-indent: 100%;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 0}
+#bar_title .ptitle_01{ background-position:0 0}
+#bar_title .ptitle_02{ background-position:0 -29px}
+#bar_title .ptitle_03{ background-position:0 -58px}
+#bar_title .ptitle_04{ background-position:0 -87px}
+#bar_title .ptitle_05{ background-position:0 -116px}
+#bar_title .ptitle_06{ background-position:0 -145px}
+
+#btn_play a{
+    top: 16px;
+	right: 31px;
+	width: 97px;
+	height: 22px;
+	background: url(../images/btn_play-02.png) no-repeat}
+#btn_play a:hover{
+    background: url(../images/btn_play-02.png) 0 -22px no-repeat}
+#btn_download a{
+    top: 16px;
+	right: 143px;
+	width: 134px;
+	height: 22px;
+	background: url(../images/btn_download.png) no-repeat}
+#btn_download a:hover{
+    background: url(../images/btn_download.png) 0 -22px no-repeat}
+
+#box_main{
+    display: block;
+    width: 845px;
+    margin: 0 auto;
+    padding: 30px 0}
+#box_main h3{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #0e206d}
+#box_main p{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #2f2f2f}
+#box_main li{
+    text-align: justify}
+
+
+/* 版權列 */
+footer p{
+	text-align:center;
+	font-size:1.3rem;
+	color:#fff;
+	margin:0;
+	padding:0;
+	line-height:46px}
+footer .txt_mark{
+	display:block;
+	position:absolute;
+	top:11px;
+	right:48px;
+	width:52px;
+	height:24px;
+	background:url(../images/pic_ad.png) no-repeat;
+	text-indent:100%;
+    white-space: normal;
+    overflow: hidden}
+
+/*
+=====================================
+區域編排
+=====================================
+*/
+
+/*劇情簡介*/
+.my-content h4{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: rgb(238,125,125)}
+.my-content h5{
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    color: rgb(156,100,100)}
+.my-content p,
+.my-content li{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-align: justify}
+
+#box_story,
+#box_law,
+#box_note,
+#box_link{
+    display: block;
+    width: 750px;
+    margin: 0 auto}
+#box_story ul{ margin: 0; padding: 0}
+#box_story li{
+    margin: 45px 0}
+.actor-photo{
+    display: block;
+    float: left;
+    width: 22%}
+.actor-photo-2{
+    display: block;
+    float: right}
+.actor-info{
+    display: block;
+    float: right;
+    width: 75%;
+    padding-left: 30px}
+.actor-info-2{
+    display: block;
+    float: left;
+    width: 64%;
+    padding-right: 40px}
+.sec-title{
+    margin-top: 30px}
+.pp_actor{ padding-top: 25px}
+.pp_actor-02{ padding-top: 20px}
+.pp_actor-03{ padding-top: 10px}
+
+#myvideo{
+    display: block;
+    width: 700px;
+    margin: 20px auto}
+
+/*劇照花絮*/
+#photo_list{
+	display:block;
+	width:840px;
+	margin:0 auto}
+#photo_list li{
+	display:block;
+	float:left;
+	width:108px;
+	height:108px;
+	margin:0 30px 25px;
+	list-style:none}
+#photo_list img{
+    border: 2px solid #e1e1e1}
+
+/*使用指引大綱*/
+#mylink a{
+    display: block;
+    width: 840px;
+    height: 148px;
+    margin: 0 auto;
+    background: url(../images/pic_link-matsu.png) no-repeat;
+    text-indent: 100%;
+    white-space: normal;
+    overflow: hidden;
+    font-size: 0;
+    border: 2px solid #e1e1e1}
+#mylink p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    color: #4b4b4b}
+
+/*法律責任*/
+.parents{
+    margin-bottom: 15px}
+#box_law p{
+    padding-left: 25px}
+#box_law ul{
+    padding-left: 84px}
+#box_law li{
+    list-style: circle outside;
+    border-bottom: 1px dashed #acacac;
+    padding: 8px 0}
+#box_law h4{
+    padding-bottom: 10px}
+#box_law h5{
+    padding-left: 25px;
+    margin-top: 15px}
+
+#law-note{ margin-bottom: 20px}
+#law-note h5{
+    display: block;
+    width: 95%;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    background: rgba(238,125,125,1);
+    margin-left: 50px}
+#law-note p{
+    display: block;
+    width: 95%;
+    margin: -5px 0 0 50px;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(119, 71, 71);
+    text-shadow: 1px 1px 3px #fff;
+    border: 2px solid rgba(238,125,125,.8);
+    background: rgba(241,232,201,.8)}
+
+/*給家長的叮嚀*/
+.note_photo{
+    display: block;
+    float: left;
+    width: 160px}
+.note_info{
+    display: block;
+    float: right;
+    width: 550px;
+    padding-top: 30px}
+.note_info h5{
+    padding-bottom: 8px}
+.note_info p{
+    padding-bottom: 20px}
+
+/*諮詢聯絡*/
+#box_link h5{
+    margin: 10px 0;
+    padding: 0 15px;
+    background-color: rgba(156,100,100,.7);
+    color: #fff;
+    letter-spacing: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px}
+#box_link li{
+    border-bottom: 1px dashed #F2ACAC;
+    padding: 20px 0}
+#box_link li li{ 
+    border-bottom: none;
+    padding: 0 0 0 25px}
+#box_link span{
+    font-size: 1.5rem;
+    color: rgb(156,100,100);
+    margin-left: 10px}
+.ppbo{margin-bottom: 15px}
+.wshot{ width: 70px}
+.wlong{ width: 145px}
+
+/*動畫效果*/	
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-delay: 500ms;
+	animation-delay: 500ms;
+    -webkit-animation-duration: 2000ms;
+    -moz-animation-duration: 2000ms;
+	animation-duration: 2000ms}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: 450ms;
+  animation-delay: 450ms;
+  -webkit-animation-duration: 2500ms;
+  -moz-animation-duration: 2500ms;
+  animation-duration: 2500ms}
+
+/*
+=====================================
+測試站標籤
+=====================================
+*/
+#myTag{
+    position: fixed;
+    top: -80px;
+    right: 0;
+    z-index: 990;
+    border-color: transparent;
+    border-left-color: RGBA(250,234,115, .8);
+    border-style: solid solid solid solid;
+    border-width: 50px;
+    height: 300px;
+    width: 50px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg)
+    /*-webkit-box-shadow: 5px 5px 20px #8e8e8e;
+    -moz-box-shadow: 5px 5px 20px #8e8e8e;
+    box-shadow: 5px 5px 20px #8e8e8e;*/
+}
+#myTag p{
+    position: absolute;
+    top: 65px;
+    right: -10px;
+    font-size: 1.6rem;
+    color: #5d5c5c;
+    line-height: 22px;
+    text-align: center;
+    transform: rotate(91deg);
+    -ms-transform: rotate(45deg)
+}
